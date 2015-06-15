@@ -30,6 +30,7 @@
         locationManager = [[CLLocationManager alloc] init];
         locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
         locationManager.delegate = self;
+        [locationManager requestAlwaysAuthorization];
     }
     [locationManager startUpdatingLocation];
 }
